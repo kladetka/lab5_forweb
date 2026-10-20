@@ -1,0 +1,181 @@
+/* Спільні стилі */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.5; }
+h1, h2, h3 { line-height: 1.2; }
+main { padding: 24px; }
+
+/* ЗАВДАННЯ 1 */
+.task1 { background: #f3f4f6; padding: 30px; }
+.task1 main { padding: 0; }
+.task1 .list-card {
+  background: rgb(255, 165, 0);
+  width: 540px;
+  max-width: 100%;
+  padding: 20px;
+  color: white;
+}
+.task1 h1 { font-size: 25px; font-weight: 900; margin: 0 0 10px; }
+.task1 ul { list-style-position: inside; }
+.task1 .main-list {
+  background: rgb(103, 158, 128);
+  padding: 10px 20px 10px 50px;
+  margin: 0;
+  list-style-image: url("icons/check.svg");
+  background-image: none;
+}
+.task1 .main-list > li { margin-bottom: 8px; }
+.task1 .main-list > li > span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  background: rgb(199, 124, 106);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.task1 .main-list ul {
+  background: rgb(153, 180, 102);
+  padding: 10px 10px 10px 40px;
+  margin: 0 0 10px;
+  list-style: none;
+}
+.task1 .main-list ul li {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  background-image: url("icons/leaf.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
+.task1 .main-list ul li span { background: rgb(218, 106, 32); padding: 4px 10px; }
+
+/* ЗАВДАННЯ 2: лише селектори тегів і псевдокласів, без класів та id */
+.task2 { background: #edf4f0; color: #20382e; }
+.task2 main { max-width: 1000px; margin: 0 auto; }
+.task2 h1 { text-align: center; color: #285943; }
+.task2 table { width: 100%; border-collapse: collapse; background: #f7fbf8; }
+.task2 th, .task2 td { border: 1px solid #6f9e83; padding: 13px 16px; text-align: left; }
+.task2 thead { background: #285943; color: white; }
+.task2 tbody tr:nth-child(odd) { background: #dcece2; }
+.task2 tbody tr:nth-child(even) { background: #c2dfcd; }
+.task2 tbody tr:hover { background: #a4cfb5; }
+.task2 p { color: #476b57; }
+
+/* ЗАВДАННЯ 3 */
+.task3 { background: linear-gradient(135deg, #dbeafe, #f5e8ff); color: #25304a; padding: 24px; }
+.task3 main { padding: 0; }
+.task3 .form-wrap { max-width: 620px; margin: 20px auto; padding: 30px; background: rgba(255,255,255,.92); border-radius: 16px; box-shadow: 0 12px 35px rgba(40,50,90,.15); }
+.task3 h1 { margin-top: 0; text-align: center; color: #5b4b9a; }
+.task3 .intro { text-align: center; color: #69718a; }
+.task3 form { display: block; }
+.task3 form > label:not(.choice) { display: block; margin: 14px 0 6px; font-weight: 700; }
+.task3 input:not([type="radio"]):not([type="checkbox"]), .task3 select, .task3 textarea {
+  width: 100%; padding: 11px 12px; border: 1px solid #c9cde0; border-radius: 8px;
+  font: inherit; background: #fbfbff; color: #25304a;
+}
+.task3 fieldset { border: 1px solid #d5d0ec; border-radius: 8px; margin: 16px 0; padding: 12px; }
+.task3 legend { font-weight: 700; color: #5b4b9a; }
+.task3 .choice { display: inline-block; margin: 7px 12px 7px 0; }
+.task3 button { margin-top: 16px; width: 100%; padding: 12px; border: 0; border-radius: 8px; background: #6554a4; color: white; font-size: 16px; font-weight: 700; cursor: pointer; }
+.task3 button:hover { background: #4d3c8a; }
+
+/* ЗАВДАННЯ 4 */
+.task4 { background: #eef3fb; color: #203454; }
+.task4 main { padding: 10px; }
+.task4 h1 { margin: 10px 0 24px; }
+.task4 .gradient-box {
+  display: inline-block; vertical-align: top; width: 300px; height: 200px;
+  margin: 0 20px 20px 0; padding: 15px; border: 1px solid rgba(20,40,70,.2);
+  border-radius: 8px; color: #172b48; font-weight: 700;
+}
+.task4 .gradient-one {
+  background-image: linear-gradient(45deg, #7aa7e8 50%, #d8e7ff 50%);
+  background-size: 40px 40px;
+}
+.task4 .gradient-two {
+  background-image: linear-gradient(transparent 50%, rgba(55,110,190,.28) 50%),
+                    linear-gradient(90deg, rgba(55,110,190,.28) 50%, transparent 50%);
+  background-size: 36px 36px;
+}
+.task4 .gradient-three {
+  background-image: radial-gradient(circle farthest-corner at 30px 20px,
+    #eaf2ff 0%, #7aa7e8 45%, #3566ad 75%, #203454 100%);
+}
+.task4 .gradient-four {
+  background-color: #79a9e8;
+  background-image: linear-gradient(to top, rgba(25,55,100,.55), transparent);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
+}
+
+/* ЗАВДАННЯ 5 */
+.task5 { background: #f5f7fb; color: #25324a; }
+.task5 main { max-width: 1100px; margin: 0 auto; }
+.task5 h1 { color: #314e80; }
+.task5 section { margin: 28px 0; }
+/* Додаємо простір після прикладів overflow */
+.task5 section:nth-of-type(2) {
+    margin-bottom: 155px;
+}
+.task5 h2 { color: #42669d; }
+.task5 .size-box { display: inline-block; vertical-align: top; width: 300px; padding: 20px; border: 5px solid #547bb7; margin: 0 20px 20px 0; background: #dce8fb; }
+.task5 .content-box { box-sizing: content-box; /* Загальна ширина: 300 + 2*20 + 2*5 = 350px. */ }
+.task5 .border-box { box-sizing: border-box; /* Загальна ширина разом із padding та border: 300px. */ background: #c7dcf7; }
+.task5 .overflow-box { display: inline-block; vertical-align: top; width: 230px; max-height: 80px; border: 2px solid #547bb7; padding: 8px; margin: 0 12px 16px 0; background: #fff; }
+.task5 .overflow-box p { margin-top: 6px; }
+.task5 .visible { overflow: visible; }
+.task5 .hidden { overflow: hidden; }
+.task5 .scroll { overflow: scroll; }
+.task5 .auto { overflow: auto; }
+.task5 .demo-nav ul { list-style: none; padding: 0; margin: 0; background: #294c7a; }
+.task5 .demo-nav li { display: inline-block; }
+.task5 .demo-nav a { display: block; padding: 10px 20px; color: white; text-decoration: none; }
+.task5 .demo-nav a:hover { background: #527eb7; }
+/* display:none прибирає елемент із потоку документа, місце не резервується; на відміну від visibility:hidden, яке приховує елемент, але залишає місце. */
+.task5 .hidden-menu-item { display: none; }
+
+/* ЗАВДАННЯ 6 */
+.task6 {
+  background-color: #1b2a41;
+  background-image: url("img/page-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #1e2b40;
+}
+.task6 main { padding: 0; }
+.task6 .container {
+  box-sizing: border-box; max-width: 900px; min-width: 320px; margin: 0 auto;
+  padding: 20px; background-color: rgba(255,255,255,.88);
+}
+/* Якщо вікно браузера вужче за 320px, min-width не дозволяє контейнеру стати вужчим, тому може з'явитися горизонтальна прокрутка. */
+.task6 header { padding: 18px; margin-bottom: 20px; border-radius: 12px; background: rgba(255,255,255,.7); }
+.task6 header h1 { margin: 0 0 8px; color: #294c7a; }
+.task6 section { margin: 20px 0; padding: 16px; background: rgba(235,243,255,.8); border-radius: 12px; }
+.task6 section h2 { margin-top: 0; color: #294c7a; }
+.task6 .tag-demo div { display: inline; width: 200px; height: 100px; margin-right: 12px; padding: 5px; background: #c5dcfa; color: #203454; }
+/* width і height не діють на inline-елементи, оскільки вони займають лише місце свого тексту. */
+.task6 .span-demo span { display: block; width: 150px; padding: 6px 10px; margin: 5px 0; background: #d6e8ff; border-left: 4px solid #527eb7; }
+.task6 .repeat-grid, .task6 .scale-grid, .task6 .attachment-grid { font-size: 0; }
+.task6 .repeat-box { display: inline-block; vertical-align: top; width: 48%; height: 200px; margin: 1%; padding: 10px; font-size: 16px; border: 1px solid #8ca5c7; background-color: #f8fbff; background-image: url("icons/pattern.svg"); background-repeat: repeat; }
+.task6 .repeat-box span, .task6 .scale-box span { display: inline-block; padding: 5px 8px; background: rgba(255,255,255,.88); font-weight: 700; }
+.task6 .repeat-x { background-repeat: repeat-x; }
+.task6 .repeat-y { background-repeat: repeat-y; }
+.task6 .repeat-space { background-repeat: space; }
+.task6 .repeat-round { background-repeat: round; }
+/* space рівномірно розподіляє вільне місце між цілими зображеннями; round масштабує зображення, щоб умістилася ціла кількість повторів. */
+.task6 .scale-box { display: inline-block; vertical-align: top; width: 300px; height: 200px; margin: 0 18px 18px 0; border: 2px solid #527eb7; padding: 8px; font-size: 16px; background-image: url("img/scale-background.svg"); background-position: center; background-repeat: no-repeat; }
+.task6 .contain { background-size: contain; }
+.task6 .cover { background-size: cover; }
+.task6 .attachment-box { display: inline-block; vertical-align: top; width: 48%; max-height: 150px; overflow: auto; margin: 1%; padding: 12px; font-size: 15px; border: 1px solid #8ca5c7; background-image: url("img/attachment-background.svg"); background-position: center; background-size: cover; }
+.task6 .attachment-scroll { background-attachment: scroll; }
+.task6 .attachment-local { background-attachment: local; }
+/* scroll прив'язує фон до області елемента й не прокручує його разом із внутрішнім вмістом; local прокручує фон разом із вмістом контейнера. */
+.task6 footer { text-align: center; color: #536781; padding: 10px; }
+@media (max-width: 650px) {
+  .task6 .repeat-box, .task6 .attachment-box { width: 98%; }
+  .task4 .gradient-box { width: min(300px, 100%); }
+}

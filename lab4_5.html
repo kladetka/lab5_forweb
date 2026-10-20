@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 5 — Завдання 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="task5">
+  <main>
+    <h1>Демонстрація box-sizing, overflow і display</h1>
+    <section>
+      <h2>1. Властивість box-sizing</h2>
+      <div class="size-box content-box">content-box<br>Загальна ширина: 350px</div>
+      <div class="size-box border-box">border-box<br>Загальна ширина: 300px</div>
+    </section>
+    <section>
+      <h2>2. Властивість overflow</h2>
+      <div class="overflow-box visible"><strong>overflow: visible</strong><p>Це довгий текст для демонстрації поведінки вмісту, який не поміщається у блок заданої висоти. За значення visible текст виходить за межі блоку та залишається видимим. Додатковий текст потрібен для перевірки.</p></div>
+      <div class="overflow-box hidden"><strong>overflow: hidden</strong><p>Це довгий текст для демонстрації поведінки вмісту, який не поміщається у блок заданої висоти. За значення hidden частина тексту за межами блоку приховується. Додатковий текст потрібен для перевірки.</p></div>
+      <div class="overflow-box scroll"><strong>overflow: scroll</strong><p>Це довгий текст для демонстрації поведінки вмісту, який не поміщається у блок заданої висоти. За значення scroll додаються смуги прокручування. Додатковий текст потрібен для перевірки.</p></div>
+      <div class="overflow-box auto"><strong>overflow: auto</strong><p>Це довгий текст для демонстрації поведінки вмісту, який не поміщається у блок заданої висоти. За значення auto смуги прокручування з'являються лише за потреби. Додатковий текст потрібен для перевірки.</p></div>
+    </section>
+    <section>
+      <h2>3. Горизонтальне меню</h2>
+      <nav class="demo-nav">
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li class="hidden-menu-item"><a href="#services">Послуги</a></li>
+          <li><a href="#projects">Проєкти</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <p>Пункт «Послуги» прихований через display: none.</p>
+    </section>
+  </main>
+</body>
+</html>
